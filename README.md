@@ -31,6 +31,8 @@ This script assumes the data has already been downloaded in .zip format. The scr
 
 The ```preprocess.py``` script preprocesses the data, impute missing values, perform transformstions for modelling. It can be directly accessed from ```train.py``` without a separate call.
 
+The current ```train.py``` script only implements a simple LSTM as a baseline model to compare with other state-of-the-art such as [GluPred](https://ieeexplore.ieee.org/document/9474665) and Autoformer described below.
+
 
 # Description of the Proposed Solution
 
