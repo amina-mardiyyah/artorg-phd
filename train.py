@@ -7,10 +7,10 @@ from sklearn.model_selection import train_test_split
 import torch
 from torch import nn,optim
 from torch.utils.data import Dataset, DataLoader
-from preprocess import Preprocess
+from preprocess import transform_data
 
 path = 'train.csv'
-train_df = Preprocess(path)
+train_df = transform_data(path)
 
 target_col = 'cbg'
 
@@ -105,7 +105,7 @@ def train_model(model, train_loader, criterion, optimizer, num_epochs):
 # Train the model
 train_model(model, train_loader, criterion, optimizer, num_epochs)
 
-# Evaluate the model on the test set
+# Evaluate the model on the validation set
 model.eval()
 with torch.no_grad():
     test_loss = 0.0
