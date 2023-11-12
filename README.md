@@ -23,10 +23,13 @@ More information and to downloading the dataset can be don via the official data
 For this challenge, the dataset was provided and downloaded in a zip format.
 
 To load the dataset into a single csv for train and test, run: 
-```python load_data.py ```
+
+```
+python load_data.py
+```
 This script assumes the data has already been downloaded in .zip format. The script extracts the subfolders and transforms the data into single .csv files for both train and test
 
-The ```preprocess.py``` script preprocesses the data, impute missing values, perform transformstions for modelling. It can be directly accesses from ```train.py``` without a separate call.
+The ```preprocess.py``` script preprocesses the data, impute missing values, perform transformstions for modelling. It can be directly accessed from ```train.py``` without a separate call.
 
 
 # Description of the Proposed Solution
