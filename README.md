@@ -9,7 +9,7 @@ The following sub-sections will describe problem, the dataset, proposed solution
 
 
 # Description of the problem:
-This challenge is about Blood Glucose prediction. It is a time-series forecasting problem. Blood Glucose Prediction(BGM) valuable information for improving the insulin management for patients with type 1 diabetes (PwT1D). The goal of this challenge is to develop a deep learning model to predict blood glucose level of individuals with type1 diabetics. 
+This challenge is about Blood Glucose prediction. It is a time-series forecasting problem. Blood Glucose Prediction(BGM) valuable information for improving the insulin management for patients with type 1 diabetes (PwT1D). The goal of this challenge is to develop a deep learning model to predict blood glucose level of individuals with type1 diabetes. 
 
 # About the dataset:
 
