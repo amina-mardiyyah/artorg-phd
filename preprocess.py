@@ -13,10 +13,13 @@ def preprocess_data(path):
 
     df = pd.read_csv(path)
     #Convert time stamp col
-    df['5minute_intervals_timestamp'] = df['5minute_intervals_timestamp'].astype(int)
+    df['5minute_intervals_timestamp'] = pd.datetime(df['5minute_intervals_timestamp'], unit='m')
+    
 
     #set index to timestampt
-    df = df.set_index('5minute_intervals_timestamp')
+    df.set_index('5minute_intervals_timestamp', inplace=True)
+    #Resample to a timeframe of 1h
+    df = df.resample("1H").mean()
     # Drop the 'missing_cgm' column
     df = df.drop(columns=['missing_cbg','year','patient_id'])
 
