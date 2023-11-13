@@ -13,7 +13,7 @@ This challenge is about Blood Glucose prediction. It is a time-series forecastin
 
 # About the dataset:
 
-The dataset used is the OhioT1DM dataset for blood glucose prediction. It is a publicly available dataset containing continuous glucose monitoring (CGM) data, insulin doses, self-reported life-event data, and physiological sensor data for 12 people with type 1 diabetes. The dataset records information at a 5mintues interval for a period of eight weeks for each individual. It includes information such as blood glucose level(cgm), basal rate, galvanic skin rate, hear rate insulin doses, meal times, carbohydrate estimates, exercise, sleep, work, stress, etc. 
+The dataset used is the OhioT1DM dataset for blood glucose prediction. It is a publicly available dataset containing continuous glucose monitoring (CGM) data, insulin doses, self-reported life-event data, and physiological sensor data for 12 people with type 1 diabetes. The dataset records information at a 5mintues interval for a period of eight weeks for each individual. This means about 12 times per hour.  It includes information such as blood glucose level(cgm), basal rate, galvanic skin rate, hear rate insulin doses, meal times, carbohydrate estimates, exercise, sleep, work, stress, etc. 
 
 More information and to downloading the dataset can be don via the official dataset webpage here: [OhioT1DM](http://smarthealth.cs.ohio.edu/OhioT1DM-dataset.html).
 
@@ -30,6 +30,7 @@ python load_data.py
 This script assumes the data has already been downloaded in .zip format. The script extracts the subfolders and transforms the data into single .csv files for both train and test
 
 The ```preprocess.py``` script preprocesses the data, impute missing values, perform transformstions for modelling. It can be directly accessed from ```train.py``` without a separate call.
+This script also includes transforming the data to represent a 1hour timeframe. The reason for this is to reduce noise and avoid drastic change for the model.
 
 The current ```train.py``` script only implements a simple LSTM as a baseline model to compare with other state-of-the-art such as [GluPred](https://ieeexplore.ieee.org/document/9474665) and Autoformer described below.
 
