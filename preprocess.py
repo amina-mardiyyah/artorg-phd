@@ -13,7 +13,7 @@ def preprocess_data(path):
 
     df = pd.read_csv(path)
     #Convert time stamp col
-    df['5minute_intervals_timestamp'] = pd.datetime(df['5minute_intervals_timestamp'], unit='m')
+    df['5minute_intervals_timestamp'] = pd.to_datetime(df['5minute_intervals_timestamp'], unit='m')
     
 
     #set index to timestampt
