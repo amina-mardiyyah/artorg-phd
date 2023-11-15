@@ -9,7 +9,9 @@ The following sub-sections will describe problem, the dataset, proposed solution
 
 
 # Description of the problem:
-This challenge is about Blood Glucose prediction. It is a time-series forecasting problem. Blood Glucose Prediction(BGM) valuable information for improving the insulin management for patients with type 1 diabetes (PwT1D). The goal of this challenge is to develop a deep learning model to predict blood glucose level of individuals with type1 diabetes. 
+This challenge is about Blood Glucose prediction. It is a time-series forecasting problem. Blood Glucose Prediction(BGM) valuable information for improving the insulin management for patients with type 1 diabetes (PwT1D). The goal of this challenge is to develop a deep learning model to predict blood glucose level of individuals with type1 diabetes. A key feature of a time series data is the fact that they're ordered sequences/representation of information such that a current timestep depends on the previous one. This makes them for suitable for sequence based models like RNNs and its variants(LSTM etc). This is because RNNs were built to handle time-dependent/sequence-based data like this, where a current time step is dependent on the previous one. However, attention-based networks have been rising in poplularity over the last few years, for their promising performance across my tasks. 
+
+In particular, this time-series problem for this challenge is multivariate. This is because multiple variables are observed/recorded simulateneously at each given time step. 
 
 # About the dataset:
 
