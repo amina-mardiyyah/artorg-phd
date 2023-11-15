@@ -18,7 +18,7 @@ In particular, the time-series problem for this challenge is multivariate. This 
 
 The dataset used is the OhioT1DM dataset for blood glucose prediction. It is a publicly available dataset containing continuous glucose monitoring (CGM) data, insulin doses, self-reported life-event data, and physiological sensor data for 12 people with type 1 diabetes. The dataset records information at a 5mintues interval for a period of eight weeks for each individual. This means about 12 times per hour.  It includes information such as blood glucose level(cgm), basal rate, galvanic skin rate, hear rate insulin doses, meal times, carbohydrate estimates, exercise, sleep, work, stress, etc. 
 
-More information and to downloading the dataset can be don via the official dataset webpage here: [OhioT1DM](http://smarthealth.cs.ohio.edu/OhioT1DM-dataset.html).
+More information about and to download the dataset can be done via the official dataset webpage here: [OhioT1DM](http://smarthealth.cs.ohio.edu/OhioT1DM-dataset.html). The dataset has an accompany paper describing in details the goal of the dataset, what it entails and possible use for research. The dataset has also been used in previous Blood Glucose Prediction. Information on the challenge and outcome can be found here: [The BGLP Challenge](http://smarthealth.cs.ohio.edu/bglp/bglp-results.html)
 
 
 # About the Scripts
