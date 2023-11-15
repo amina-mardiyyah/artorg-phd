@@ -1,7 +1,8 @@
 # artorg-phd
 This repository contains my solution to the Artog-PHD interview test. 
 
-The repository is not complete.
+The repository is not yet complete.It will be updated constantly, with the README.md describing every bits of it. 
+
 The following sub-sections will describe problem, the dataset, proposed solution and the current scripts in the repository.
 
 
